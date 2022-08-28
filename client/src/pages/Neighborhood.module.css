@@ -1,0 +1,54 @@
+/* For map section */
+.summary {
+  display: flex;
+  margin-top: 20px;
+}
+
+.summary_map {
+  border-radius: 20px;
+  width: 500px;
+  height: 600px;
+  margin: 0 10%;
+}
+
+.map_selection {
+  margin-bottom: 30px;
+}
+
+.map_selection label {
+  display: inline-block;
+  font-size: 20px;
+  margin: 30px 10px 0 0;
+}
+
+.map_selection select {
+  width: 200px;
+  font-size: 1rem;
+}
+
+/* For summary section */
+.br_summary {
+  /* background-color: red; */
+  width: 75%;
+  height: 350px;
+  padding: 10px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+
+/* For Recommend Section */
+.recommend {
+  margin: 5rem 10% 0 10%;
+}
+
+.recommend > h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.home__section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

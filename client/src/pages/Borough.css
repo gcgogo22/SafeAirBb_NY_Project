@@ -1,0 +1,148 @@
+.borough {
+  background: #15181a;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.skw_pages {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.skw_page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.skw_page__half {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  transition: transform 1s;
+}
+
+.skw_page__half__left {
+  left: 0;
+  transform: translate3d(-32.4vh, 100%, 0);
+}
+
+.skw_page__half__right {
+  left: 50%;
+  transform: translate3d(32.4vh, -100%, 0);
+}
+
+.skw_page.active .skw_page__half {
+  transform: translate3d(0, 0, 0);
+}
+
+.skw_page__skewed {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 140%;
+  height: 100%;
+  transform: skewX(-18deg);
+  background: #000;
+}
+
+.skw_page__half__left .skw_page__skewed {
+  left: -40%;
+}
+
+.skw_page__half__right .skw_page__skewed {
+  right: -40%;
+}
+
+.skw_page__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 30%;
+  color: #fff;
+  transform: skewX(18deg);
+  transition: transform 1s, opacity 1s;
+  background-size: cover;
+}
+
+.skw_page__half__left .skw_page__content {
+  padding-left: 30%;
+  padding-right: 30%;
+  transform-origin: 100% 0;
+}
+
+.skw_page__half__right .skw_page__content {
+  padding-left: 30%;
+  padding-right: 30%;
+  transform-origin: 0 100%;
+}
+
+.skw_page.inactive .skw_page__content {
+  opacity: 0.5;
+  transform: skewX(18deg) scale(0.95);
+}
+
+.skw_page__heading {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  color: #ffa0a0;
+}
+
+.skw_page__description {
+  font-size: 18px;
+  text-align: center;
+}
+
+.skw_page__link {
+  color: #ffa0a0;
+}
+
+.skw_page_1 .skw_page__half__left .skw_page__content {
+  background-image: url("https://www.choicehotels.com/cms/images/choice-hotels/demand-articles/best-parks-in-manhattan/best-parks-in-manhattan.jpg");
+}
+
+.skw_page_1 .skw_page__half__right .skw_page__content {
+  background: #292929;
+}
+
+.skw_page_2 .skw_page__half__left .skw_page__content {
+  background: #292929;
+}
+
+.skw_page_2 .skw_page__half__right .skw_page__content {
+  background-image: url("https://www.revolutionarytoursnyc.com/wp-content/uploads/2020/01/The-Best-of-Brooklyn-Walking-Tour-No-Text-TripAdvisor.jpg");
+}
+
+.skw_page_3 .skw_page__half__left .skw_page__content {
+  background-image: url("https://i.pinimg.com/736x/5b/0d/05/5b0d055a044c4a4940beabb89db418e8.jpg");
+}
+
+.skw_page_3 .skw_page__half__right .skw_page__content {
+  background: #292929;
+}
+
+.skw_page_4 .skw_page__half__left .skw_page__content {
+  background: #292929;
+}
+
+.skw_page_4 .skw_page__half__right .skw_page__content {
+  background-image: url("https://blog-www.pods.com/wp-content/uploads/2020/01/MG_NY_9_1_The_Bronx.jpg");
+}
+
+.skw_page_5 .skw_page__half__left .skw_page__content {
+  background-image: url("https://gotourismguides.com/nyc/wp-content/uploads/2016/04/staten-island.jpg");
+}
+
+.skw_page_5 .skw_page__half__right .skw_page__content {
+  background: #292929;
+}
